@@ -1,7 +1,7 @@
 /* Equipe:
-  Erich Brendell Araújo Medeiros
-  Nathalia Medeiros Costa de Almeida
-  Etapa 1
+  Erich Brendell Araújo Medeiros - Subturma 01A
+  Nathalia Medeiros Costa de Almeida - Subturma 01A
+  Etapas 1 e 2
 */
  
 var x = 200;
