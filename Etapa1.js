@@ -8,17 +8,12 @@
  
 var xJog = 500;
 var yJog = 400;
-var x1 = 38;
-var y1 = 26;
-var x2 = 810;
-var y2 = 26;
-var raioP = 15;
-var raioO = 15;
-var t;
-var vxo = [];
-var vyo = [];
-var qtObjetos = 20;
-var vVel = [];
+var x1 = 430;
+var y1 = 280;
+var x2 = 510;
+var y2 = 280;
+var raioP = 20;
+var raioO = 20;
 var vidas = 3;
 var pontos = 0;
 var nivel = 1;
@@ -75,22 +70,8 @@ function draw() {
   rect(10, 678, 940, 10);
   
   //Objetos andando ao longo do cenário
-  circle(x1, y1, 10);
-  x1 = x1 + 1.75;
-  if(x1 > 800){
-    x1 = 810;
-    if( y1 < 300)
-      y1 = y1 + 1.75;
-    else{
-      y1 = 30;
-      x1 = 10;
-    }
-  }
-  circle(x2, y2, 10);
-  x2 = x2 - 1.55;
-  if (x2 < 473){
-   x2 = 800;
-  }
+  ellipse(x1, y1, 25);
+  ellipse(x2, y2, 25);
   
   //Movimentação do jogador
   ellipse(xJog,yJog, 2*raioP, 2*raioO);
@@ -117,4 +98,3 @@ function draw() {
     vidas--;
   }
 }
-
